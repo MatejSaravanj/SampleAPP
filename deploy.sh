@@ -8,6 +8,7 @@ pm2 stop simple_app
 cd SampleAPP/
 #Install applicatio dependencies
 npm install
+npm audit fix
 echo $PRIVATE_KEY > privatekey.pem
 echo $SERVER > server.crt
 #Start the application with the process name simple_app using pm2
